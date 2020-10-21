@@ -11,34 +11,33 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
   <body>
     <!-- header -->
     <header class="header">
-      <div class="conteiner conteiner-header">
-        <!-- Навигация -->
+      <div class="conteiner">
+        <!-- navigation -->
         <nav class="navigation">
-          <a href="./index.html" class="logo">
-            <span class="logo-item">Web</span>Studio
+          <a href="./index.html" class="logotip">
+            <span class="logotip-accent">Web</span>Studio
           </a>
           <ul class="navigation__list list">
             <li class="item current">
-              <a href="./index.html" class="link current">Студия</a>
+              <a class="link current" href="./index.html" >Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item">
-              <a href="" class="link">Контакты</a>
+              <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-list list">
+        <ul class="contacts__list list">
           <li class="contacts item">
-            <a href="malto:info@devstudio.com" class="envelope link">
+            <a class="envelope link" href="malto:info@devstudio.com">
               <svg class="envelope-icon">
                 <use href="./svg/symbol-defs.svg#icon-envelope">
                 </use>
@@ -47,7 +46,7 @@
             </a>
           </li>
           <li class="contacts item">
-            <a href="tel:+380961111111" class="smartphone link">
+            <a class="smartphone link" href="tel:+380961111111">
               <svg class="smartphone-icon">
                 <use href="./svg/symbol-defs.svg#icon-smartphone">
                 </use>
@@ -58,17 +57,17 @@
         </ul>
       </div>
     </header>
+    
     <main>
       
       <!-- hero -->
       <section class="hero">
-        <div class="conteiner conteiner-hero">
+        <div class="conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="modal-btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-
       </section>
 
       <!-- feature -->
@@ -441,10 +440,10 @@
     <!-- footer -->
     <footer class="footer">
       <div class="conteiner">
-        <div class="conteiner-contact">
-          <a href="./index.html" class="logo">
-            <span class="logo-item">Web</span
-            ><span class="logo-color">Studio</span>
+        <div class="footer-contact">
+          <a href="./index.html" class="logotip">
+            <span class="logotip-accent">Web</span
+            ><span class="footer__logotip-color">Studio</span>
           </a>
           <address>
             <ul class="contact-list list">
