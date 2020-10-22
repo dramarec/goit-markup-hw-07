@@ -50,7 +50,7 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	.icon-close:hover {
-		fill: var(--accent-color);
+		fill: $accent-color;
 	}
 }
 
@@ -96,8 +96,8 @@
 
 		&:focus,
 		&:hover {
-			outline-color: var(--accent-color);
-			border-color: var(--accent-color);
+			outline-color: $accent-color;
+			border-color: $accent-color;
 		}
 
 		&:hover + .icon-person,
@@ -106,8 +106,8 @@
 		&:focus + .icon-person,
 		&:focus + .icon-phone,
 		&:focus + .icon-email {
-			outline-color: var(--accent-color);
-			fill: var(--accent-color);
+			outline-color: $accent-color;
+			fill: $accent-color;
 		}
 	}
 	.icon-person {
@@ -158,8 +158,8 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		&:hover,
 		&:focus {
-			outline-color: var(--accent-color);
-			border-color: var(--accent-color);
+			outline-color: $accent-color;
+			border-color: $accent-color;
 		}
 		&::placeholder {
 			font-size: 14px;
@@ -190,10 +190,10 @@
 		clip-path: inset(100%);
 		&:checked + .icon-check {
 			background-image: url("../svg/7-hw/icon-check.svg");
-			background-color: var(--accent-color);
+			background-color: $accent-color;
 			background-size: contain;
 			background-origin: border-box;
-			border: 2px solid var(--accent-color);
+			border: 2px solid $accent-color;
 		}
 	}
 	.icon-check {
@@ -208,6 +208,6 @@
 		margin-right: 7px;
 	}
 	&__link {
-		color: var(--accent-color);
+		color: $accent-color;
 	}
 }

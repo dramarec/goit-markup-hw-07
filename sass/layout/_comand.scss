@@ -27,7 +27,7 @@
 		margin: 0;
 		font-size: 16px;
 		line-height: 1.9; /* 19 */
-		color: var(--title-text-color);
+		color: $title-text-color;
 		font-weight: 500;
 	}
 	&__job {
@@ -58,7 +58,7 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	.item-link:hover {
-		background-color: var(--accent-color);
+		background-color: $accent-color;
 		border-radius: 50%;
 	}
 	.icon {

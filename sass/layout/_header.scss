@@ -30,7 +30,7 @@
 		height: 4px;
 		width: 100%;
 		border-radius: 2px;
-		background-color: var(--accent-color);
+		background-color: $accent-color;
 	}
 
 	&__link {
@@ -38,14 +38,14 @@
 		padding-top: 32px;
 		padding-bottom: 32px;
 
-		color: var(--title-text-color);
+		color: $title-text-color;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 1.1; /* 16 */
 		letter-spacing: 0.02em;
 		text-decoration: none;
 		transition-duration: 250ms;
-		transition-timing-function: var(--timing-function);
+		transition-timing-function: $timing-function;
 		&::after {
 			content: "";
 			position: absolute;
@@ -54,8 +54,8 @@
 			height: 4px;
 			width: 100%;
 			border-radius: 2px;
-			background-color: var(--accent-color);
-			transition: transform 250ms var(--timing-function);
+			background-color: $accent-color;
+			transition: transform 250ms $timing-function;
 			transform: scaleX(0);
 		}
 		&:hover::after {
@@ -65,7 +65,7 @@
 		&:focus,
 		&:hover {
 			outline-color: #2195f3;
-			color: var(--accent-color);
+			color: $accent-color;
 		}
 	}
 }
@@ -90,11 +90,11 @@
 		letter-spacing: 0.02em;
 		text-decoration: none;
 		transition-duration: 250ms;
-		transition-timing-function: var(--timing-function);
+		transition-timing-function: $timing-function;
 		&:focus,
 		&:hover {
 			outline-color: #2195f3;
-			color: var(--accent-color);
+			color: $accent-color;
 		}
 		&:hover .contacts-list__svg {
 			fill: #2196f3;
@@ -102,7 +102,7 @@
 	}
 	&__svg {
 		margin-right: 10px;
-		fill: var(--primary-text-color);
+		fill: $primary-text-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}

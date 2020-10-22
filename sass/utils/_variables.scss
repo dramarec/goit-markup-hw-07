@@ -5,11 +5,18 @@
 /* цвет акцент #2196f3;*/
 /* цвет фона подвал и герой #2F303A; */
 
-:root {
-	--primary-text-color: #757575;
-	--title-text-color: #212121;
-	--second-color: #f5f4fa;
-	--accent-color: #2196f3;
-	--hero-color: #ffffff;
-	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$second-color: #f5f4fa;
+$accent-color: #2196f3;
+$hero-color: #ffffff;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// :root {
+// 	--primary-text-color: #757575;
+// 	--title-text-color: #212121;
+// 	--second-color: #f5f4fa;
+// 	--accent-color: #2196f3;
+// 	--hero-color: #ffffff;
+// 	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }

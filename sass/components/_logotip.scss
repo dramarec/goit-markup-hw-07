@@ -4,14 +4,14 @@
 	padding-top: 24px;
 	padding-bottom: 25px;
 
-	color: var(--title-text-color);
+	color: $title-text-color;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.1; /* 16 */
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	transition-duration: 250ms;
-	transition-timing-function: var(--timing-function);
+	transition-timing-function: $timing-function;
 }
 
 .navigation .logotip,
@@ -25,7 +25,7 @@
 
 .logotip-accent {
 	outline-color: #2195f3;
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 .footer .logotip {
@@ -35,5 +35,5 @@
 
 .footer__logotip-color {
 	// outline-color: #2195f3;
-	color: var(--hero-color);
+	color: $hero-color;
 }
