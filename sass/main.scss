@@ -1,5 +1,7 @@
 // utils
 @import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/placeholders";
 
 // base
 @import "./base/common";
@@ -10,7 +12,7 @@
 // @import "./components/modal";
 
 // // layot
-// @import "./layout/header";
+@import "./layout/header";
 // @import "./layout/hero";
 // @import "./layout/features";
 // @import "./layout/engage";
@@ -18,200 +20,14 @@
 // @import "./layout/clients";
 // @import "./layout/footer";
 
-/* белый цвет герой #FFFFFF;*/
-/* основной цвет текста #757575;*/
-/* цвет зогаловок текста #212121;*/
-/* вторичный цвет фона #F5F4FA;*/
-/* цвет акцент #2196f3;*/
-/* цвет фона подвал и герой #2F303A; */
-
-/* =============== common =============== */
-
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-img {
-	display: block;
-	min-width: 100%;
-	height: auto;
-}
-
-.address {
-	font-style: normal;
-}
-
-body {
-	background-color: #fff;
-	color: var(--primary-text-color);
-	font-family: Roboto, sans-serif;
-	letter-spacing: 0.03em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.conteiner {
-	width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* =============== header ================ */
-/* logo */
-
-.header .logotip,
-.footer .logotip {
-	font-family: Raleway, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2; /* 31 */
-	letter-spacing: 0.03em;
-}
-.logotip {
-	/* outline: 1px solid tomato; */
-	display: block;
-	padding-top: 24px;
-	padding-bottom: 25px;
-
-	color: var(--title-text-color);
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.1; /* 16 */
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	transition-duration: 250ms;
-	transition-timing-function: var(--timing-function);
-}
-
-.logotip-accent {
-	outline-color: #2195f3;
-	color: var(--accent-color);
-}
-
-.navigation__list .item {
-	position: relative;
-}
-
-.navigation__list .item:not(:last-child),
-.contacts__list .item:not(:last-child) {
-	margin-right: 50px;
-}
-
-.navigation__list {
-	margin-left: 93px;
-}
-.contacts__list {
-	margin-left: auto;
-}
-
-.navigation__list .link,
-.contacts__list .link {
-	/* outline: 1px solid tomato; */
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
-
-	color: var(--title-text-color);
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.1; /* 16 */
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	transition-duration: 250ms;
-	transition-timing-function: var(--timing-function);
-}
-
-.contacts__list .link {
-	color: currentColor;
-}
-
-.navigation__list .link.current,
-.navigation__list .link:focus,
-.navigation__list .link:hover,
-.contacts__list .link:focus,
-.contacts__list .link:hover {
-	outline-color: #2195f3;
-	color: var(--accent-color);
-}
-
-.navigation__list .link::after {
-	content: "";
-	position: absolute;
-	display: block;
-	bottom: 0;
-	height: 4px;
-	width: 100%;
-	border-radius: 2px;
-	background-color: var(--accent-color);
-	transition: transform 250ms var(--timing-function);
-	transform: scaleX(0);
-}
-
-.navigation__list .link:hover::after {
-	transform: scaleX(1);
-}
-
-.item.current::after {
-	content: "";
-	position: absolute;
-	display: block;
-	bottom: 0;
-	height: 4px;
-	width: 100%;
-	border-radius: 2px;
-	background-color: var(--accent-color);
-}
-
-.contacts .link {
-	/* outline: 1px solid tomato; */
-	display: inline-flex;
-	align-items: center;
-}
-
-.envelope-icon {
-	width: 16px;
-	height: 12px;
-	margin-right: 10px;
-	fill: var(--primary-text-color);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.smartphone-icon {
-	width: 10px;
-	height: 16px;
-	margin-right: 10px;
-	fill: var(--primary-text-color);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.envelope.link:hover .envelope-icon {
-	fill: #2196f3;
-}
-
-.smartphone.link:hover .smartphone-icon {
-	fill: #2196f3;
-}
-
-.header .conteiner,
-.hero .conteiner,
-.navigation,
-.navigation__list,
-.contacts__list {
-	display: flex;
-	align-items: center;
-}
-
 /* ================ main =============== */
 
 /*  ============== Герой-hero ========== */
+
+.hero .conteiner {
+	display: flex;
+	align-items: center;
+}
 
 .hero {
 	/* outline: 2px solid tomato; */
