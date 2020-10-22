@@ -517,18 +517,17 @@
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg class="icon-close">
+            <use href="./svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
         <form class="form" autocomplete="off">
-          <button class="close-btn" data-modal-close>
-            <svg class="icon-close">
-              <use href="./svg/symbol-defs.svg#icon-close"></use>
-            </svg>
-          </button>
-    
-          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-    
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>   
           <div class="form-group">
-            <label for="name">Имя</label>
-            <input type="text" class="input" name="name" id="name" placeholder="" required>
+            <label class="label" for="name">Имя</label>
+            <input class="input" type="text" name="name" id="name" placeholder="" required>
             <svg class="icon-person">
               <use href="./svg/symbol-defs.svg#icon-person">
               </use>
@@ -536,8 +535,8 @@
           </div>
     
           <div class="form-group">
-            <label for="tel">Телефон</label>
-            <input type="tel" class="input" name="tel" id="tel" required>
+            <label class="label" for="tel">Телефон</label>
+            <input class="input" type="tel" name="tel" id="tel" required>
             <svg class="icon-phone">
               <use href="./svg/symbol-defs.svg#icon-phone">
               </use>
@@ -545,8 +544,8 @@
           </div>
     
           <div class="form-group">
-            <label for="mail">Почта</label>
-            <input type="email" class="input" name="mail" id="mail" required>
+            <label class="label" for="mail">Почта</label>
+            <input class="input" type="email" name="mail" id="mail" required>
             <svg class="icon-email">
               <use href="./svg/symbol-defs.svg#icon-email">
               </use>
@@ -554,15 +553,15 @@
           </div>
     
           <div class="form-group area">
-            <label for="comment">Комментарий</label>
+            <label class="label" for="label">Комментарий</label>
             <textarea class="textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
     
           <label class="label-checkbox">
             <input class="checkbox" type="checkbox" name="ok" value="ok">
             <span class="icon-check"></span>
-            <span class="label-title">Соглашаюсь с рассылкой и принимаю
-              <a class="checkbox-link" href="">
+            <span>Соглашаюсь с рассылкой и принимаю
+              <a class="label-checkbox__link" href="">
                 Условия договора
               </a>
             </span>
@@ -573,6 +572,7 @@
       </div>
     
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
