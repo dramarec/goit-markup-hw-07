@@ -99,6 +99,23 @@ body {
   color: var(--hero-color);
 }
 
+.modal-btn {
+  min-width: 200px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--hero-color);
+  border: none;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  /* 30 */
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .header .conteiner,
 .header .navigation,
 .header .navigation-list,
@@ -217,15 +234,7 @@ body {
   height: 16px;
 }
 
-/* ================ main =============== */
-/*  ============== Герой-hero ========== */
-.hero .conteiner {
-  display: flex;
-  align-items: center;
-}
-
 .hero {
-  /* outline: 2px solid tomato; */
   text-align: center;
   background-color: #2f303a;
   padding: 200px 0;
@@ -238,11 +247,12 @@ body {
 }
 
 .hero .conteiner {
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
 .hero-title {
-  /* outline: 2px solid tomato; */
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -255,24 +265,6 @@ body {
   text-transform: uppercase;
 }
 
-.modal-btn {
-  min-width: 200px;
-  padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--hero-color);
-  border: none;
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  /* 30 */
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* ========== feature ========== */
 .feature {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -284,7 +276,11 @@ body {
   justify-content: space-between;
 }
 
-.item-feature {
+.feature-list__item {
+  width: 270px;
+}
+
+.feature-list__icon {
   display: flex;
   width: 270px;
   height: 120px;
@@ -294,13 +290,9 @@ body {
   border-radius: 4px;
 }
 
-.icon-feature {
+.feature-list__svg {
   width: 70px;
   height: 70px;
-}
-
-.feature-list .list-item {
-  width: 270px;
 }
 
 .feature-list .section-title {
@@ -313,7 +305,7 @@ body {
   text-align: left;
 }
 
-.feature-list p {
+.feature-list__description {
   font-size: 14px;
   line-height: 1.7;
   /* 24 */

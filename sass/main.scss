@@ -9,116 +9,17 @@
 
 // // components
 @import "./components/logotip";
+@import "./components/modal-btn";
 // @import "./components/modal";
 
 // // layot
 @import "./layout/header";
-// @import "./layout/hero";
-// @import "./layout/features";
-// @import "./layout/engage";
-// @import "./layout/comand";
-// @import "./layout/clients";
-// @import "./layout/footer";
-
-/* ================ main =============== */
-
-/*  ============== Герой-hero ========== */
-
-.hero .conteiner {
-	display: flex;
-	align-items: center;
-}
-
-.hero {
-	/* outline: 2px solid tomato; */
-	text-align: center;
-	background-color: #2f303a;
-	padding: 200px 0;
-	max-width: 1600px;
-	height: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.3)), url(../img/hero-1.jpg);
-	background-position: center;
-}
-
-.hero .conteiner {
-	flex-direction: column;
-}
-
-.hero-title {
-	/* outline: 2px solid tomato; */
-	width: 696px;
-	margin-top: 0;
-	margin-bottom: 30px;
-	color: var(--hero-color);
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.4; /* 60 */
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-}
-
-.modal-btn {
-	min-width: 200px;
-	padding: 10px 32px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	color: var(--hero-color);
-	border: none;
-	background-color: var(--accent-color);
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.9; /* 30 */
-	letter-spacing: 0.06em;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-/* ========== feature ========== */
-
-.feature {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
-.feature-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.item-feature {
-	display: flex;
-	width: 270px;
-	height: 120px;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--second-color);
-	border-radius: 4px;
-}
-.icon-feature {
-	width: 70px;
-	height: 70px;
-}
-
-.feature-list .list-item {
-	width: 270px;
-}
-
-.feature-list .section-title {
-	font-size: 14px;
-	line-height: 1.1; /* 16 */
-	text-transform: uppercase;
-	margin-top: 30px;
-	margin-bottom: 10px;
-	text-align: left;
-}
-
-.feature-list p {
-	font-size: 14px;
-	line-height: 1.7; /* 24 */
-}
+@import "./layout/hero";
+@import "./layout/feature";
+@import "./layout/engage";
+@import "./layout/comand";
+@import "./layout/clients";
+@import "./layout/footer";
 
 /* ======= engage ======= */
 
