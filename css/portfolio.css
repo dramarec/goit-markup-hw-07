@@ -244,27 +244,22 @@ body {
   height: 16px;
 }
 
-/* ============ porfolio.html ============== */
-.header.border {
-  border-bottom: 1px solid #ececec;
-}
-
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  border-top: 1px solid #ececec;
 }
 
-/* ======== button ========  */
-.flex-button {
+.button-list {
   display: flex;
   justify-content: center;
 }
 
-.flex-button .btn + .btn {
+.button-list .item + .item {
   margin-left: 6px;
 }
 
-.flex-button button {
+.button-list .btn {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
@@ -280,8 +275,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flex-button button:hover,
-.flex-button button:focus {
+.button-list .btn:hover, .button-list .btn:focus {
   color: var(--hero-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -289,11 +283,9 @@ body {
   border-radius: 4px;
 }
 
-/* ============ примеры-examples ========== */
 .portfolio-examples {
   display: flex;
   flex-wrap: wrap;
-  /* overflow: hidden; */
 }
 
 .portfolio-list {
@@ -321,20 +313,19 @@ body {
   cursor: pointer;
 }
 
-/* ==== portfolio-link ==== */
 .portfolio-link {
   text-decoration: none;
   overflow: hidden;
 }
 
-.portfolio-box {
+.portfolio-link .portfolio-box {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.product-actions.overlay {
+.portfolio-link .portfolio-box .overlay {
   /* outline: 1px solid tomato; */
   position: absolute;
   width: 100%;
@@ -350,13 +341,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-box:hover .product-actions.overlay {
+.portfolio-link .portfolio-box:hover .overlay {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* ==== card-content ==== */
-.card-content {
+.portfolio-link .card-content {
   position: relative;
   background: #ffffff;
   border-right: 1px solid #eeeeee;
@@ -365,7 +355,7 @@ body {
   padding: 20px 24px;
 }
 
-.card-content .title {
+.portfolio-link .card-content .title {
   font-weight: 700;
   color: var(--title-text-color);
   font-size: 18px;
@@ -374,7 +364,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.card-content p {
+.portfolio-link .card-content p {
   font-size: 16px;
   line-height: 1.9;
   /* 30 */
